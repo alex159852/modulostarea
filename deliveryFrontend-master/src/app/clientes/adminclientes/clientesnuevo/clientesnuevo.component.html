@@ -1,0 +1,23 @@
+<form  >
+    <div class="bd-example">
+        <div class="form-floating mb-3">
+            <input name="nombre" type="text" [(ngModel)]="item.nombre" class="form-control" id="nombreInput" placeholder="Nombre producto">
+            <label for="nombreInput">Nombre producto</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="descripcion" type="text" [(ngModel)]="item.descripcion" class="form-control" id="descripcionInput" placeholder="Descripcion producto">
+            <label for="descripcionInput">Descripcion producto</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="precio" type="text" [(ngModel)]="item.precio" class="form-control" id="precioInput" placeholder="Precio producto">
+            <label for="precioInput">Precio producto</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="foto" type="text" [(ngModel)]="item.foto" class="form-control" id="fotoInput" placeholder="Foto producto">
+            <label for="fotoInput">Foto producto</label>
+        </div>
+    </div>
+    <button type="button" (click)="salir()" class="btn btn-warning">Cancelar</button>
+    <button type="button" (click)="enviar()" class="btn btn-success">Guardar</button>
+
+</form>

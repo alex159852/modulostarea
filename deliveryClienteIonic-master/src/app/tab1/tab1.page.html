@@ -1,0 +1,25 @@
+<ion-header >
+  <ion-toolbar color="primary">
+    <ion-title>
+      Productos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Productos
+      </ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let prod of lista" (click)="openProducto(prod)" >
+      <ion-thumbnail slot="end">
+        <img src="https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2021/03/30/6063031b90a87.r_d.1083-871-0.jpeg">
+      </ion-thumbnail>
+      <ion-label>{{prod.nombre}}</ion-label>
+      {{prod.precio|number: formatNumber}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>
